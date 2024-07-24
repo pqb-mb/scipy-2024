@@ -1,0 +1,1 @@
+sudo docker build . -f Dockerfile.gpu -t pqb_pennylane_gpu --progress plain

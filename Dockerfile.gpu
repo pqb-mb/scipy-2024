@@ -1,0 +1,10 @@
+from pennylaneai/pennylane:0.32.0-lightning-gpu
+
+WORKDIR /app 
+COPY bricks_example /app
+COPY requirements.txt /app
+
+RUN echo "$(ls -l /app)"
+RUN pip install -r /app/requirements.txt
+
+CMD bash -c "jupyter notebook --port=8885 --no-browser --ip=0.0.0.0 --allow-root"

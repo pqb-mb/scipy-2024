@@ -1,0 +1,1 @@
+sudo docker run --gpus all -p 8885:8885 -v .:/app pqb_pennylane_gpu 
